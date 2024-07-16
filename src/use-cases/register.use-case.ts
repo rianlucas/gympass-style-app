@@ -1,5 +1,5 @@
 import { hashSync } from 'bcryptjs'
-import { UsersRepository } from 'src/repositories/prisma/users-repository'
+import { UsersRepository } from 'src/repositories/users-repository'
 import { UserAleadyExistsError } from './errors/user-already-exists-error'
 import { User } from '@prisma/client'
 
