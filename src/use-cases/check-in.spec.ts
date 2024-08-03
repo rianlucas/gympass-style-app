@@ -14,7 +14,7 @@ describe('Check-in Use Case', () => {
     gymRepository = new InMemoryGymsRepository()
     sut = new CheckInUseCase(checkInRepository, gymRepository)
 
-    gymRepository.items.push({
+    gymRepository.create({
       id: 'gym-id',
       title: 'Gym Title',
       description: 'Gym Description',
@@ -23,7 +23,7 @@ describe('Check-in Use Case', () => {
       longitude: new Decimal(0),
     })
 
-    gymRepository.items.push({
+    gymRepository.create({
       id: 'gym-02',
       title: 'Gym Title',
       description: 'Gym Description',
