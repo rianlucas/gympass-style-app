@@ -8,6 +8,7 @@
     "start:prod": "node build/server.js",
     "build": "tsup src --out-dir build",
     "eslint": "eslint --ext .ts src",
+    "eslint:fix": "eslint --ext .ts src --fix",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
