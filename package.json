@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start:prod": "node build/server.js",
-    "buiild": "tsup src --out -dir build",
+    "build": "tsup src --out-dir build",
     "eslint": "eslint --ext .ts src",
     "test": "vitest run",
     "test:watch": "vitest",
