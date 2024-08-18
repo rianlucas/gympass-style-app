@@ -30,12 +30,12 @@ export class PrismaGymRepository implements GymsRepository {
     return prisma.$queryRaw<Gym[]>`
         SELECT * FROM gyms
         WHERE ( 6371 * acos ( cos (radians(${params.latitude}) ) * cos( radians( latitude ) ) * cos( radians( longitude ) - radians(${params.longitude}) ) * sin(radians( latitude ) ) ) ) <= 10
-      `;
+      `
   }
 
   async create(data: Prisma.GymCreateInput): Promise<Gym> {
     return prisma.gym.create({
       data,
-    });
+    })
   }
 }

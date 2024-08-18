@@ -4,5 +4,4 @@ import { GetUserMetrics } from '../get-user-metrics'
 export function makeUserProfileUseCase() {
   const checkInsRepository = new PrismaCheckInRepository()
   return new GetUserMetrics(checkInsRepository)
-
 }
